@@ -1,0 +1,12 @@
+1ro compilar f-sum:
+
+	gfortran -c f-sum.f90 -o f-sum.o
+
+2do compilar f-main:
+
+	gfortran -c f-main.f90 -o f-main.o
+
+3ro linkear ambos objetos y crear ejecutable:
+
+	gfortran f-main.o f-sum.o -o fortrancomplete.e
+
