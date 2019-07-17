@@ -1,0 +1,12 @@
+1ro compilar c-sum:
+
+	gcc -c c-sum.c -o c-sum.o
+
+2do compilar c-main:
+
+	gcc -c c-main.c -o c-main.o
+
+3ro linkear ambos objetos y crear ejecutable:
+
+	gcc c-main.o c-sum.o -o Ccomplete.e
+
