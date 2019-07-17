@@ -1,0 +1,12 @@
+1ro compilar f-sum:
+
+	gfortran -c f-sum.f90 -o f-sum.o
+
+2do compilar c-main, modificar el nombre de sum_abs_:
+
+	gcc -c c-main.c -o c-main.o
+
+3ro linkear ambos objetos y crear ejecutable:
+
+	gcc c-main.o f-sum.o -o Candfortrancomplete.e
+
