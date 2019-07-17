@@ -1,0 +1,12 @@
+1ro compilar c-sum modificando el nombre de la funcion en el .c (agregar el decorador_); usar punteros y añadir el argumento sum
+
+	gcc -fPIC -c c-sum.c -o c-summod.o
+
+2do compilar f-main:
+
+	gfortran -fPIC -c f-main.f90 -o f-main.o
+
+3ro linkear ambos objetos y crear ejecutable:
+
+	gfortran -v f-main.o c-summod.o -o fortranandCcomplete.e
+
